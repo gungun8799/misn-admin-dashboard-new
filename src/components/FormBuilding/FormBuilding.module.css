@@ -1,0 +1,233 @@
+.formBuildingPage {
+  display: flex;
+  background-color: #f5f7fa; /* Matches the background of the image */
+}
+
+.formBuildingContainer {
+  flex: 1; /* Adjust this value to take less space if necessary */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 10px;
+  margin-left: 40vh; /* Adjust this based on Sidebar width */
+  margin-top: 5vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for better separation */
+  max-width: 70vw; /* Set maximum width */
+  width: 50vw; /* Set specific width */
+}
+
+.backButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #118881;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  margin-left: -20px;
+  align-items: left;
+  justify-content: left;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #8f8d8d; /* Darker text color */
+}
+
+.formGroup input,
+.formGroup select {
+  width: 10%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+
+.questionGroup {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light background for question groups */
+}
+
+.questionGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: light;
+  color: #747474; /* Darker text color */
+}
+
+.questionGroup input {
+  width: 70%;
+  margin-right: 9px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.questionGroup .questionInputWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.choices {
+  margin-bottom: 10px;
+}
+
+.choiceGroup {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 5px;
+}
+
+.choiceGroup input {
+  flex: 1;
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+
+
+.removeChoiceButton,
+.removeQuestionButton,
+.addChoiceButton,
+.addMultipleChoiceButton,
+.addShortAnswerButton,
+.submitButton {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #118881; /* Primary button color */
+  color: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitButton {
+  justify-content: center;
+  align-items: center;
+  margin-left: 30vw;
+  width: 300px;
+}
+
+.addChoiceButton {
+  background-color: #f9f9f9; /* Primary button color */
+  color: rgb(192, 192, 192);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.removeChoiceButton,
+.removeQuestionButton {
+  background-color: #f9f9f9; /* Red for remove buttons */
+  color: #ff1a1a;
+  font-weight: bold;
+  width: auto;
+}
+
+.removeChoiceButton:hover,
+.removeQuestionButton:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+  color: white;
+}
+
+.addChoiceButton:hover,
+.addMultipleChoiceButton:hover,
+.addShortAnswerButton:hover,
+.submitButton:hover {
+  background-color: #a2d3d0; /* Darker blue on hover */
+}
+
+.errorMessage {
+  color: red;
+  font-weight: bold;
+}
+
+.successMessage {
+  color: green;
+  font-weight: bold;
+}
+
+.addQuestionContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.addQuestionButton {
+  font-size: 24px;
+  padding: 10px 15px;
+  background-color: #118881;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+
+.addQuestionContainer:hover .addQuestionDropdown {
+  display: block;
+  
+
+}
+
+.addQuestionDropdown {
+  display: none;
+  position: absolute;
+  background-color: none;
+  z-index: 1;
+  right: 0;
+  margin-left:45vw;
+
+}
+
+.addQuestionDropdown button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  text-align: left;
+  margin-left:55vw;
+
+}
+
+.addQuestionDropdown button:hover {
+  background-color: #a4ebe6;
+}

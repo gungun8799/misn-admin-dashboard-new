@@ -1,0 +1,117 @@
+.formPage {
+  display: flex;
+  /* Adjusts margin-left based on the fixed sidebar width */
+}
+
+.formContainer {
+  margin-left: 30vw; /* Adjust based on your Sidebar width */
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  flex: 1;
+  overflow-y: auto; /* Enable scrolling only for the form container */
+}
+
+.programCard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.programCard h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.formTypes {
+  display: flex;
+  flex-direction: column;
+}
+
+.formType {
+  margin-bottom: 20px;
+}
+
+.formTypeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.formTypeHeader span {
+  font-weight: bold;
+  color: #757575;
+}
+
+.formTypeHeader::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.formList {
+  margin-top: 20px;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.formRow span {
+  flex: 1;
+  color: #757575; /* Grey color for form name */
+}
+
+.editButton,
+.deleteButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #f9f9f9;
+  color: #118881;
+}
+
+.editButton:hover {
+  background-color: #cecece;
+}
+
+.deleteButton {
+  background-color: #f9f9f9;
+  color: #949494;
+}
+
+.deleteButton:hover {
+  background-color: #ffd2d2;
+}
+
+.createFormButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00a3a3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.createFormButton:hover {
+  background-color: #008080;
+}

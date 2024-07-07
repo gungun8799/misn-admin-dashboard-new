@@ -1,0 +1,223 @@
+.dashboard {
+  background-color: var(--primitive-color-grey-100);
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  margin-left: 30vh;
+  background-color: rgb(241, 241, 241);
+}
+
+.sidebar {
+  background-color: #007b83;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 240px;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.sidebar ul li.active {
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+    /* background-color: grey; */
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todays-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 1px;
+  margin-top: -30px;
+  margin-bottom: 2vh;
+  background-color: white;
+}
+
+.todays-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todays-card .number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #118881;
+}
+
+.todays-card .percentage {
+  color: green;
+}
+
+.status-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.status-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50vh;
+  text-align: center;
+}
+
+.list-container {
+  background-color: white;
+  border-radius: 8px;
+  height: 37vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.list-container {
+  flex: 1;
+}
+
+.graph-container {
+  flex: 1.5;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.list-item .info {
+  flex: 1;
+}
+
+.info {
+  display: flex;
+  margin-left: 7vh;
+}
+
+.list-item .clients {
+  text-align: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+.status-card h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.gauge-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.circular-progressbar {
+  width: 100px; /* Adjusted width */
+  height: 120px; /* Adjusted height */
+  margin: 0 auto 5px; /* Reduced bottom margin */
+}
+
+.circular-progressbar .CircularProgressbar-path {
+  stroke: url(#gradient);
+}
+
+.circular-progressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+}
+
+.circular-progressbar .CircularProgressbar-text {
+  fill: #000;
+}
+
+.status-card .progress-details {
+  font-size: 14px;
+}
+
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons-container button:hover {
+  background-color: #0056b3;
+}
+
+.graph-container {
+  width: 1200px; /* Adjust the max width to make the chart wider */
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  height: 37vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.graph-container h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.graph {
+  width: 600px;
+  height: 250px; /* Adjust the height as needed */
+  margin-left: 15vh;
+
+}
