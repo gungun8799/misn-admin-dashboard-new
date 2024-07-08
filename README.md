@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+**Client app repository : https://github.com/gungun8799/misn-client-app
+**Agent app repository : https://github.com/gungun8799/misn-agent-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+# Maternal Infant Service (MiSN) Web Application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This repository contains the web applications for the Maternal Infant Service New York (MiSN) project. MiSN is a non-profit social support organization aimed at streamlining operations by leveraging AI for tasks such as eligibility screening, form filling, service matching, and client communication. The project includes three interconnected applications: Admin Dashboard, Client App, and Agent App.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Project Overview](#project-overview)
+- [Applications](#applications)
+  - [Admin Dashboard](#admin-dashboard)
+  - [Client App](#client-app)
+  - [Agent App](#agent-app)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Overview
 
-### `npm run build`
+The MiSN project aims to provide a seamless experience for both clients and agents, ensuring that underserved citizens receive the necessary support by matching them to state-provided facilities and services efficiently. The system is designed to handle various operations including service requests, document uploads, appointment scheduling, and communication between clients and agents.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Applications
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Admin Dashboard
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Admin Dashboard allows administrators to monitor and manage the operations of MiSN. Features include:
+- User management
+- Service and program management
+- Monitoring application statuses
+- Generating reports
 
-### `npm run eject`
+### Client App
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Client App is designed for clients to interact with MiSN services. Features include:
+- Service request submission
+- Document upload
+- Viewing service status
+- Scheduling appointments
+- Communicating with agents
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Agent App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The Agent App is for agents to manage their assigned clients. Features include:
+- Viewing and managing client requests
+- Communicating with clients
+- Scheduling and confirming visits
+- Submitting service details
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+To run these applications locally, follow these steps for each application:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/misn-project.git
+   cd misn-project
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Navigate to each application directory and install dependencies:**
 
-### Code Splitting
+   - Admin Dashboard:
+     ```bash
+     cd admin-dashboard
+     npm install
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - Client App:
+     ```bash
+     cd client-app
+     npm install
+     ```
 
-### Analyzing the Bundle Size
+   - Agent App:
+     ```bash
+     cd agent-app
+     npm install
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+To start each application, navigate to the respective directory and run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Admin Dashboard:
+  ```bash
+  cd admin-dashboard
+  npm start
+  ```
 
-### Advanced Configuration
+- Client App:
+  ```bash
+  cd client-app
+  npm start
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Agent App:
+  ```bash
+  cd agent-app
+  npm start
+  ```
 
-### Deployment
+Each application will start on its default port (usually `http://localhost:3000`).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Technologies
 
-### `npm run build` fails to minify
+The MiSN project uses the following technologies:
+- **Frontend:** React.js, HTML, CSS, JavaScript
+- **Backend:** Firebase Firestore, Firebase Storage
+- **Authentication:** Firebase Authentication
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
+Please ensure your code follows the project's coding standards and conventions.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
